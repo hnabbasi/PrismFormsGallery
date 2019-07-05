@@ -15,7 +15,7 @@ namespace XDSPrismForms
 
         protected override void OnInitialized()
         {
-            NavigationService.NavigateAsync($"NavigationPage/MainPage");
+            NavigationService.NavigateAsync($"NavigationPage/MainPage/CategoryPage/DetailPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
