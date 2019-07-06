@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:prism="http://prismlibrary.com"
+             x:Class="XDSPrismForms.Views.MainPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Load" 
+                     Command="{prism:NavigateTo MagicPage}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <TableView Intent="Menu">
+            <TableSection>
+                <TextCell Text="Commanding" Command="{Binding AreaSelected}" CommandParameter="Commanding"/>
+                <TextCell Text="Navigation"/>
+                <TextCell Text="Dialog Service"/>
+                <TextCell Text="Event Aggregator"/>
+                <TextCell Text="Modules"/>
+            </TableSection>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

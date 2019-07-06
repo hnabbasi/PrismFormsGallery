@@ -1,6 +1,9 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
 
-namespace GeneralModule.Views
+using Xamarin.Forms;
+
+namespace XDSPrismForms.Views
 {
     public partial class MainPage : ContentPage
     {

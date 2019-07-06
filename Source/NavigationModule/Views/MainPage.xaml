@@ -4,8 +4,13 @@
              x:Class="NavigationModule.Views.MainPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <Label Text="Welcome to Navigation Module"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"/>
+        <StackLayout>
+            <Button Text="Navigation"/>
+            <Button Text="XAML Navigation"/>
+            <Button Text="Navigation with Params"/>
+            <Button Text="Navigation with AutoInitialize"/>
+            <Button Text="Navigate Deep"/>
+            <Button Text="Navigate Remove Page"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

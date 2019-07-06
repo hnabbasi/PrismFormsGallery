@@ -19,5 +19,10 @@
   <ItemGroup>
     <ProjectReference Include="..\GeneralModule\GeneralModule.csproj" />
     <ProjectReference Include="..\NavigationModule\NavigationModule.csproj" />
+    <ProjectReference Include="..\CommandingModule\CommandingModule.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

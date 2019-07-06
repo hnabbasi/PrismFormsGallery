@@ -1,11 +1,10 @@
 ﻿using System;
-using NavigationModule.Views;
+using CommandingModule.Views;
 using Prism.Ioc;
 using Prism.Modularity;
-
-namespace NavigationModule
+namespace CommandingModule
 {
-    public class NavigationModule : IModule
+    public class CommandingModule : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
@@ -14,9 +13,8 @@ namespace NavigationModule
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterForNavigation<LoginPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<CategoryPage>();
-            containerRegistry.RegisterForNavigation<DetailPage>();
         }
     }
 }

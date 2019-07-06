@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{D889
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralModule", "GeneralModule\GeneralModule.csproj", "{5FE5935C-D318-4274-A7C9-9C02001C1C18}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "NavigationModule", "NavigationModule\NavigationModule.csproj", "{6D6D9EAF-2A09-48ED-B60B-10E55B2A4239}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationModule", "NavigationModule\NavigationModule.csproj", "{6D6D9EAF-2A09-48ED-B60B-10E55B2A4239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandingModule", "CommandingModule\CommandingModule.csproj", "{70509809-CA39-4C28-B51D-E1824769628A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,9 +85,22 @@ Global
 		{6D6D9EAF-2A09-48ED-B60B-10E55B2A4239}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{6D6D9EAF-2A09-48ED-B60B-10E55B2A4239}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{6D6D9EAF-2A09-48ED-B60B-10E55B2A4239}.Release|iPhone.Build.0 = Release|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{70509809-CA39-4C28-B51D-E1824769628A}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5FE5935C-D318-4274-A7C9-9C02001C1C18} = {D889CE6D-4145-4EB2-840B-E648A8F26444}
 		{6D6D9EAF-2A09-48ED-B60B-10E55B2A4239} = {D889CE6D-4145-4EB2-840B-E648A8F26444}
+		{70509809-CA39-4C28-B51D-E1824769628A} = {D889CE6D-4145-4EB2-840B-E648A8F26444}
 	EndGlobalSection
 EndGlobal
