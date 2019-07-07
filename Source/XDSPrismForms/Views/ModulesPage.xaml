@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="XDSPrismForms.Views.MagicPage"
+             x:Class="XDSPrismForms.Views.ModulesPage"
              Title="{Binding Title}">
-    <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Load Commanding Module" 
+    <TableView Intent="Settings">
+        <TableSection Title="Load Modules">
+            <TextCell Text="Commanding Module"
                     Command="{Binding LoadCommand}"
                     CommandParameter="CommandingModule"/>
-            <Button Text="Load General Module" 
+            <TextCell Text="General Module" 
                     Command="{Binding LoadCommand}"
                     CommandParameter="GeneralModule"/>
-            <Button Text="Load Navigation Module" 
+            <TextCell Text="Navigation Module" 
                     Command="{Binding LoadCommand}"
                     CommandParameter="NavigationModule"/>
-        </StackLayout>
-    </ContentPage.Content>
+        </TableSection>
+    </TableView>
 </ContentPage>

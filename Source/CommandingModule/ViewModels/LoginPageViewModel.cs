@@ -14,26 +14,19 @@ namespace CommandingModule.ViewModels
             Title = "Commanding";
             _navigationService = navigationService;
 
-            //SubmitCommand = new DelegateCommand(OnSumbitTapped).ObservesProperty(()=> IsValid);
-            SubmitCommand = new DelegateCommand(OnSumbitTapped, ()=>IsValid).ObservesProperty(() => IsValid);
+            SubmitCommand = new DelegateCommand(OnSumbitTapped, () => CanSubmit).ObservesProperty(() => CanSubmit);
         }
 
         private void OnSumbitTapped()
         {
-            _navigationService.NavigateAsync(nameof(MainPage));
+            _navigationService.NavigateAsync("HomePage");
         }
 
-        private string _username;
-        public string Username { get => _username; set { SetProperty(ref _username, value); } }
+        private string _name;
+        public string Name { get => _name; set { SetProperty(ref _name, value); } }
 
-        private string _password;
-        
-
-        public string Password { get => _password; set { SetProperty(ref _password, value); } }
-
-        //public bool IsValid => !string.IsNullOrWhiteSpace(Username) && !string.IsNullOrWhiteSpace(Password);
-        private bool _isValid;
-        public bool IsValid { get => _isValid; set { SetProperty(ref _isValid, value); } }
+        private bool _canSubmit;
+        public bool CanSubmit { get => _canSubmit; set { SetProperty(ref _canSubmit, value); } }
 
         public DelegateCommand SubmitCommand { get; }
     }

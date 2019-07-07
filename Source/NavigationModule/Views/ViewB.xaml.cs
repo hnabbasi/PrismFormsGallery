@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace XDSPrismForms.Views
+namespace NavigationModule.Views
 {
-    public partial class MagicPage : ContentPage
+    public partial class ViewB : ContentPage
     {
-        public MagicPage()
+        public ViewB()
         {
             InitializeComponent();
         }

@@ -1,21 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:prism="http://prismlibrary.com"
+             xmlns:prism="clr-namespace:Prism.Navigation.Xaml;assembly=Prism.Forms"
              x:Class="XDSPrismForms.Views.MainPage"
              Title="{Binding Title}">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Load" 
-                     Command="{prism:NavigateTo MagicPage}"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <TableView Intent="Menu">
-            <TableSection>
-                <TextCell Text="Commanding" Command="{Binding AreaSelected}" CommandParameter="Commanding"/>
-                <TextCell Text="Navigation"/>
-                <TextCell Text="Dialog Service"/>
-                <TextCell Text="Event Aggregator"/>
-                <TextCell Text="Modules"/>
+        <TableView Intent="Settings">
+            <TableSection Title="Features">
+                <TextCell Text="Commanding"
+                          Command="{Binding AreaSelected}" 
+                          CommandParameter="Commanding"/>
+                <TextCell Text="Navigation"
+                          Command="{Binding AreaSelected}" 
+                          CommandParameter="Navigation"/>
+                <TextCell Text="Dialog Service"
+                          Command="{Binding AreaSelected}" 
+                          CommandParameter="DialogService"/>
+                <TextCell Text="Event Aggregator"
+                          Command="{Binding AreaSelected}" 
+                          CommandParameter="EventAggregator"/>
+                <TextCell Text="Modules"
+                          Command="{prism:NavigateTo ModulesPage}"/>
             </TableSection>
         </TableView>
     </ContentPage.Content>

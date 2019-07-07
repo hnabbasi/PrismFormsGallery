@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace NavigationModule.Views
+namespace CommandingModule.Views
 {
-    public partial class CategoryPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public CategoryPage()
+        public HomePage()
         {
             InitializeComponent();
         }

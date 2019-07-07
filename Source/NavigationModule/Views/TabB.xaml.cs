@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace NavigationModule.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class TabB : ContentPage
     {
-        public MainPage()
+        public TabB()
         {
             InitializeComponent();
         }

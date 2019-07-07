@@ -8,26 +8,33 @@ namespace XDSPrismForms.ViewModels
     {
         private readonly INavigationService _navigationService;
 
+        public DelegateCommand<string> AreaSelected { get; }
+
         public MainPageViewModel(INavigationService navigationService)
         {
             Title = "Prism.Forms";
+            _navigationService = navigationService;
 
             AreaSelected = new DelegateCommand<string>(OnAreaSelected);
-            _navigationService = navigationService;
         }
 
-        private void OnAreaSelected(string obj)
+        private void OnAreaSelected(string area)
         {
-            switch (obj)
+            switch (area)
             {
                 case "Commanding":
+                    _navigationService.NavigateAsync($"{nameof(CommandingModule.Views.LoginPage)}"); //"LoginPage"
+                    break;
+                case "Navigation":
+                    _navigationService.NavigateAsync($"{nameof(NavigationModule.Views.NavMainPage)}");
+                    break;
+                case "DialogService":
                     _navigationService.NavigateAsync($"{nameof(CommandingModule.Views.LoginPage)}");
                     break;
-                default:
+                case "EventAggregator":
+                    _navigationService.NavigateAsync($"{nameof(CommandingModule.Views.LoginPage)}");
                     break;
             }
         }
-
-        public DelegateCommand<string> AreaSelected { get; }
     }
 }

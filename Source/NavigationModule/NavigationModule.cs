@@ -14,9 +14,11 @@ namespace NavigationModule
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<CategoryPage>();
-            containerRegistry.RegisterForNavigation<DetailPage>();
+            containerRegistry.RegisterForNavigation<NavMainPage>();
+            containerRegistry.RegisterForNavigation<ViewA>();
+            containerRegistry.RegisterForNavigation<ViewB>();
+            containerRegistry.RegisterForNavigation<ViewC>();
+            containerRegistry.RegisterForNavigation<TabB>();
         }
     }
 }

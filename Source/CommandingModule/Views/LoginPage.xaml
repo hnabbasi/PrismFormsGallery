@@ -3,15 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="CommandingModule.Views.LoginPage"
              Title="{Binding Title}">
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Entry Text="{Binding Username}" Placeholder="Username"/>
-            <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Password"/>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Remember Me" HorizontalOptions="FillAndExpand"/>
-                <Switch IsToggled="{Binding IsValid, Mode=TwoWay}"/>
-            </StackLayout>
-            <Button Text="Login" Command="{Binding SubmitCommand}"/>
+    
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Spacing="12">
+        <Entry Text="{Binding Name}" Placeholder="Enter name..."/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Can Submit" 
+                   HorizontalOptions="FillAndExpand" 
+                   VerticalTextAlignment="Center"/>
+            <Switch IsToggled="{Binding CanSubmit, Mode=TwoWay}"/>
         </StackLayout>
-    </ContentPage.Content>
+        <Button Text="Submit" Command="{Binding SubmitCommand}"/>
+    </StackLayout>
 </ContentPage>

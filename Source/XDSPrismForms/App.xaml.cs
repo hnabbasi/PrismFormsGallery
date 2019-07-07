@@ -23,14 +23,14 @@ namespace XDSPrismForms
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<MagicPage>();
+            containerRegistry.RegisterForNavigation<ModulesPage>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
-			moduleCatalog.AddModule<CommandingModule.CommandingModule>(InitializationMode.OnDemand);
+			moduleCatalog.AddModule<CommandingModule.CommandingModule>();
             moduleCatalog.AddModule<GeneralModule.GeneralModule>(InitializationMode.OnDemand);
-            moduleCatalog.AddModule<NavigationModule.NavigationModule>(InitializationMode.OnDemand);
+            moduleCatalog.AddModule<NavigationModule.NavigationModule>(InitializationMode.WhenAvailable);
         }
     }
 }

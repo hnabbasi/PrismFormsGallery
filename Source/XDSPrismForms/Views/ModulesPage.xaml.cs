@@ -2,9 +2,9 @@
 
 namespace XDSPrismForms.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class ModulesPage : ContentPage
     {
-        public MainPage()
+        public ModulesPage()
         {
             InitializeComponent();
         }

@@ -3,9 +3,9 @@ using Prism.Commands;
 
 namespace CommandingModule.ViewModels
 {
-    public class MainPageViewModel : MvvmHelpers.BaseViewModel
+    public class HomePageViewModel : MvvmHelpers.BaseViewModel
     {
-        public MainPageViewModel()
+        public HomePageViewModel()
         {
             Title = "Welcome";
         }

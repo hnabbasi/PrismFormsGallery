@@ -1,19 +1,16 @@
-﻿using System;
-using Prism.Commands;
+﻿using Prism.Commands;
 using Prism.Modularity;
-using Prism.Services;
+using Prism.Mvvm;
 
 namespace XDSPrismForms.ViewModels
 {
-    public class MagicPageViewModel : MvvmHelpers.BaseViewModel
+    public class ModulesPageViewModel : BindableBase
     {
         private readonly IModuleManager _moduleManager;
 
-        public MagicPageViewModel(IModuleManager moduleManager)
+        public ModulesPageViewModel(IModuleManager moduleManager)
         {
-            Title = "Load Modules";
             _moduleManager = moduleManager;
-
             LoadCommand = new DelegateCommand<string>(OnLoadTapped);
         }
 
