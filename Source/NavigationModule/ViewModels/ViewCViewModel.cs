@@ -1,4 +1,6 @@
-﻿using Prism.Navigation;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Prism.Navigation;
 
 namespace NavigationModule.ViewModels
 {

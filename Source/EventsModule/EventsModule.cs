@@ -1,11 +1,11 @@
 ﻿using System;
-using GeneralModule.Views;
+using EventsModule.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 
-namespace GeneralModule
+namespace EventsModule
 {
-    public class GeneralModule : IModule
+    public class EventsModule : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
@@ -14,7 +14,8 @@ namespace GeneralModule
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<EventPage>();
+            containerRegistry.RegisterForNavigation<EventPublisherPage>();
         }
     }
 }

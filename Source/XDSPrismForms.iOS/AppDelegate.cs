@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Prism.Events;
 using UIKit;
+using Prism.Ioc;
+using EventsModule.Events;
 
 namespace XDSPrismForms.iOS
 {
@@ -24,8 +27,19 @@ namespace XDSPrismForms.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
             return base.FinishedLaunching(app, options);
         }
+
+        #region sshh...
+        //
+        //var xfApp = new App();
+        //xfApp.Container?.Resolve<IEventAggregator>()?.GetEvent<GreetEvent>()?.Subscribe(OnMessageReceived);
+        //LoadApplication(xfApp);
+
+        //private void OnMessageReceived(string obj)
+        //{
+        //    new UIAlertView("iOS", obj, null, "WOW!").Show();
+        //}
+        #endregion
     }
 }

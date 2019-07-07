@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Prism.Commands;
 using Prism.Navigation;
 
@@ -13,15 +14,15 @@ namespace NavigationModule.ViewModels
             Title = "Navigation Menu";
             _navigationService = navigationService;
 
-            NavigateCommand = new DelegateCommand<string>(OnNavigateTapped);
+            NavigateCommand = new DelegateCommand<string>(async (s) => await OnNavigateTapped(s));
         }
-
-        private async void OnNavigateTapped(string page)
+        //9696
+        private async Task OnNavigateTapped(string page)
         {
             switch (page)
             {
                 case "Simple":
-                    var result = await _navigationService.NavigateAsync("ViewA");
+                    INavigationResult result = await _navigationService.NavigateAsync("ViewA");
                     if(!result.Success) {
                         Console.WriteLine($"Navigation failed {result.Exception.Message}");
                     }

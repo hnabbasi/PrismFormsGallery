@@ -13,12 +13,12 @@
                 <TextCell Text="Navigation"
                           Command="{Binding AreaSelected}" 
                           CommandParameter="Navigation"/>
-                <TextCell Text="Dialog Service"
-                          Command="{Binding AreaSelected}" 
-                          CommandParameter="DialogService"/>
                 <TextCell Text="Event Aggregator"
                           Command="{Binding AreaSelected}" 
                           CommandParameter="EventAggregator"/>
+                <TextCell Text="Dialog Service"
+                          Command="{Binding AreaSelected}" 
+                          CommandParameter="DialogService"/>
                 <TextCell Text="Modules"
                           Command="{prism:NavigateTo ModulesPage}"/>
             </TableSection>

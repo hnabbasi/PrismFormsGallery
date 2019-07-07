@@ -17,9 +17,9 @@
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1347-pre" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeneralModule\GeneralModule.csproj" />
     <ProjectReference Include="..\NavigationModule\NavigationModule.csproj" />
     <ProjectReference Include="..\CommandingModule\CommandingModule.csproj" />
+    <ProjectReference Include="..\EventsModule\EventsModule.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />

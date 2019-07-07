@@ -13,6 +13,7 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Events\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove=".DS_Store" />

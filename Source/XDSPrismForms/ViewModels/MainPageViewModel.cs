@@ -1,5 +1,4 @@
-﻿using System;
-using Prism.Commands;
+﻿using Prism.Commands;
 using Prism.Navigation;
 
 namespace XDSPrismForms.ViewModels
@@ -23,15 +22,15 @@ namespace XDSPrismForms.ViewModels
             switch (area)
             {
                 case "Commanding":
-                    _navigationService.NavigateAsync($"{nameof(CommandingModule.Views.LoginPage)}"); //"LoginPage"
+                    _navigationService.NavigateAsync("LoginPage");
                     break;
                 case "Navigation":
-                    _navigationService.NavigateAsync($"{nameof(NavigationModule.Views.NavMainPage)}");
-                    break;
-                case "DialogService":
-                    _navigationService.NavigateAsync($"{nameof(CommandingModule.Views.LoginPage)}");
+                    _navigationService.NavigateAsync("NavMainPage");
                     break;
                 case "EventAggregator":
+                    _navigationService.NavigateAsync("EventPage");
+                    break;
+                case "DialogService":
                     _navigationService.NavigateAsync($"{nameof(CommandingModule.Views.LoginPage)}");
                     break;
             }

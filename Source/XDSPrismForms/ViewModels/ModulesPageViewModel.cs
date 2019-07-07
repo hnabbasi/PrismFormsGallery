@@ -1,27 +1,41 @@
 ﻿using Prism.Commands;
 using Prism.Modularity;
 using Prism.Mvvm;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace XDSPrismForms.ViewModels
 {
     public class ModulesPageViewModel : BindableBase
     {
         private readonly IModuleManager _moduleManager;
+        private readonly IModuleCatalog _moduleCatalog;
 
-        public ModulesPageViewModel(IModuleManager moduleManager)
+        public ModulesPageViewModel(IModuleManager moduleManager, IModuleCatalog moduleCatalog)
         {
             _moduleManager = moduleManager;
-            LoadCommand = new DelegateCommand<string>(OnLoadTapped);
+            _moduleCatalog = moduleCatalog;
+            LoadModules();
+            LoadCommand = new DelegateCommand<IModuleInfo>(OnLoadTapped);
         }
 
-        private void OnLoadTapped(string moduleName)
+        private IEnumerable<IModuleInfo> _modules;
+        public IEnumerable<IModuleInfo> Modules { get => _modules; private set { SetProperty(ref _modules, value); } }
+
+        private void OnLoadTapped(IModuleInfo moduleInfo)
         {
-            if (string.IsNullOrWhiteSpace(moduleName))
+            if (moduleInfo == null)
                 return;
 
-            _moduleManager.LoadModule(moduleName);
+            _moduleManager.LoadModule(moduleInfo.ModuleName);
+            LoadModules();
         }
 
-        public DelegateCommand<string> LoadCommand { get; }
+        void LoadModules()
+        {
+            Modules = _moduleCatalog.Modules.OrderByDescending(_ => _.State).ThenBy(_ => _.ModuleName);
+        }
+
+        public DelegateCommand<IModuleInfo> LoadCommand { get; }
     }
 }

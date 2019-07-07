@@ -1,19 +1,43 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:prism="http://prismlibrary.com"
              x:Class="XDSPrismForms.Views.ModulesPage"
+             x:Name="this"
              Title="{Binding Title}">
-    <TableView Intent="Settings">
-        <TableSection Title="Load Modules">
-            <TextCell Text="Commanding Module"
-                    Command="{Binding LoadCommand}"
-                    CommandParameter="CommandingModule"/>
-            <TextCell Text="General Module" 
-                    Command="{Binding LoadCommand}"
-                    CommandParameter="GeneralModule"/>
-            <TextCell Text="Navigation Module" 
-                    Command="{Binding LoadCommand}"
-                    CommandParameter="NavigationModule"/>
-        </TableSection>
-    </TableView>
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" 
+                     BackgroundColor="#eeeeee"
+                     Padding="12">
+            <Label Text="Module" 
+                   HorizontalOptions="FillAndExpand"/>
+            <Label Text="State" />
+        </StackLayout>
+        <ListView ItemsSource="{Binding Modules}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="12,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.LoadCommand, Source={x:Reference this}}" 
+                                                      CommandParameter="{Binding .}"/>
+                            </Grid.GestureRecognizers>
+                            <Label Text="{Binding ModuleName}" 
+                                   FontSize="Large"
+                                   VerticalOptions="Center"/>
+                            <Label Grid.Column="1"
+                                   Text="{Binding State}" 
+                                   FontSize="Small"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="End"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

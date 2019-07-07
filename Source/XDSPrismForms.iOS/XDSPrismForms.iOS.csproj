@@ -133,5 +133,9 @@
       <Project>{29A930C2-8FFE-437B-B56F-60C3DB288786}</Project>
       <Name>XDSPrismForms</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EventsModule\EventsModule.csproj">
+      <Project>{A9682743-6F00-4AC8-9B18-6B62C93897CA}</Project>
+      <Name>EventsModule</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

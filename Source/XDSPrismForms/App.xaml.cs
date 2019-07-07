@@ -29,8 +29,8 @@ namespace XDSPrismForms
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
 			moduleCatalog.AddModule<CommandingModule.CommandingModule>();
-            moduleCatalog.AddModule<GeneralModule.GeneralModule>(InitializationMode.OnDemand);
-            moduleCatalog.AddModule<NavigationModule.NavigationModule>(InitializationMode.WhenAvailable);
+            moduleCatalog.AddModule<EventsModule.EventsModule>(InitializationMode.OnDemand);
+            moduleCatalog.AddModule<NavigationModule.NavigationModule>(InitializationMode.OnDemand);
         }
     }
 }
