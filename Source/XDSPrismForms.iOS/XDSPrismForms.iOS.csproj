@@ -126,6 +126,12 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -133,7 +139,7 @@
       <Project>{29A930C2-8FFE-437B-B56F-60C3DB288786}</Project>
       <Name>XDSPrismForms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EventsModule\EventsModule.csproj">
+    <ProjectReference Include="..\Modules\EventsModule\EventsModule.csproj">
       <Project>{A9682743-6F00-4AC8-9B18-6B62C93897CA}</Project>
       <Name>EventsModule</Name>
     </ProjectReference>

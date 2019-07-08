@@ -1,9 +1,10 @@
 ﻿using Prism.Commands;
 using Prism.Navigation;
+using MvvmHelpers;
 
 namespace XDSPrismForms.ViewModels
 {
-    public class MainPageViewModel : MvvmHelpers.BaseViewModel
+    public class MainPageViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
 
@@ -31,7 +32,7 @@ namespace XDSPrismForms.ViewModels
                     _navigationService.NavigateAsync("EventPage");
                     break;
                 case "DialogService":
-                    _navigationService.NavigateAsync($"{nameof(CommandingModule.Views.LoginPage)}");
+                    _navigationService.NavigateAsync("RegistrationView");
                     break;
             }
         }

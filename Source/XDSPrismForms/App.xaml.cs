@@ -31,6 +31,7 @@ namespace XDSPrismForms
 			moduleCatalog.AddModule<CommandingModule.CommandingModule>();
             moduleCatalog.AddModule<EventsModule.EventsModule>(InitializationMode.OnDemand);
             moduleCatalog.AddModule<NavigationModule.NavigationModule>(InitializationMode.OnDemand);
+            moduleCatalog.AddModule<DialogModule.DialogModule>(InitializationMode.WhenAvailable);
         }
     }
 }
