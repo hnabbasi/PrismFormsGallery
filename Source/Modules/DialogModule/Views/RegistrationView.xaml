@@ -8,11 +8,9 @@
             <ViewCell>
                 <StackLayout Orientation="Horizontal" Padding="12">
                     <Label Text="Status"
-                           FontSize="Small"
                            HorizontalOptions="FillAndExpand"
                            VerticalOptions="Center"/>
                     <Label Text="{Binding Status}"
-                           FontSize="Small"
                            VerticalOptions="Center"/>
                 </StackLayout>
             </ViewCell>

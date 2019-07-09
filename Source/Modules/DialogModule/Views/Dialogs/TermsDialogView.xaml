@@ -7,7 +7,7 @@
              dialog:DialogLayout.RelativeWidthRequest="0.75"
              x:Class="DialogModule.Views.TermsDialogView">
     <Frame CornerRadius="20">
-        <Grid RowSpacing="12">
+        <Grid RowSpacing="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -17,12 +17,10 @@
             </Grid.RowDefinitions>
             <StackLayout Orientation="Horizontal" Spacing="12">
                 <Image 
-                       Source="https://en.gravatar.com/userimage/21681162/2d71fa87c9c70e4d1e774f8ca25cba7b.jpg"
+                       Source="https://www.gravatar.com/avatar/e009b4ca9e976a04fb7b05264f1a21fc?s=60"
                        HeightRequest="60"
                        WidthRequest="60"
-                       Aspect="AspectFit"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center">
+                       Aspect="AspectFit">
                     <!--<ff:CachedImage.Transformations>
                         <fft:CircleTransformation/>
                     </ff:CachedImage.Transformations>-->
@@ -43,7 +41,9 @@
             <Label Text="Sign your life away..."
                    Grid.Row="2"
                    FontSize="Small"
-                   HeightRequest="100"/>
+                   HeightRequest="100"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
             <StackLayout Orientation="Horizontal"
                          Grid.Row="3">
                 <Label Text="Read Terms and Conditions"
