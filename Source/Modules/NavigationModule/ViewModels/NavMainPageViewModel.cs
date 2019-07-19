@@ -16,7 +16,9 @@ namespace NavigationModule.ViewModels
 
             NavigateCommand = new DelegateCommand<string>(async (s) => await OnNavigateTapped(s));
         }
-        //9696
+
+        public DelegateCommand<string> NavigateCommand { get; set; }
+
         private async Task OnNavigateTapped(string page)
         {
             switch (page)
@@ -46,14 +48,13 @@ namespace NavigationModule.ViewModels
                     await _navigationService.NavigateAsync("ViewA/ViewB/ViewC?selectedTab=TabB");
                     break;
                 case "DeeperParams":
-                    await _navigationService.NavigateAsync("ViewA?name=HussainA/ViewB?name=HussainB/ViewC?selectedTab=TabB");
+                    // Any parameter passed to a TabbedPage will be propagated to all children pages (tabs).
+                    await _navigationService.NavigateAsync("ViewA?name=HussainA/ViewB?name=HussainB/ViewC?selectedTab=TabC&name=Hussain&message=folks");
                     break;
                 case "Remove":
                     await _navigationService.NavigateAsync("../ViewA/ViewB/ViewC");
                     break;
             }
         }
-
-        public DelegateCommand<string> NavigateCommand { get; set; }
     }
 }

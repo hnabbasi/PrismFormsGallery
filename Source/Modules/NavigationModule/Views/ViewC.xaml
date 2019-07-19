@@ -12,11 +12,6 @@
                    VerticalOptions="Center"/>
         </ContentPage>
         <views:TabB/>
-        <ContentPage Title="Tab C">
-            <Label Text="Tab C"
-                   HorizontalTextAlignment="Center"
-                   FontSize="Large"
-                   VerticalOptions="Center"/>
-        </ContentPage>
+        <views:TabC/>
     </TabbedPage.Children>
 </TabbedPage>

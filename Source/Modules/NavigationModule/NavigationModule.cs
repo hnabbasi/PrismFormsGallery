@@ -19,6 +19,7 @@ namespace NavigationModule
             containerRegistry.RegisterForNavigation<ViewB>();
             containerRegistry.RegisterForNavigation<ViewC>();
             containerRegistry.RegisterForNavigation<TabB>();
+            containerRegistry.RegisterForNavigation<TabC>();
         }
     }
 }
