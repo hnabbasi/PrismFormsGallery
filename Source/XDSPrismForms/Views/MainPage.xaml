@@ -19,6 +19,8 @@
                 <TextCell Text="Dialog Service"
                           Command="{Binding AreaSelected}" 
                           CommandParameter="DialogService"/>
+            </TableSection>
+            <TableSection Title=" ">
                 <TextCell Text="Modules"
                           Command="{prism:NavigateTo ModulesPage}"/>
             </TableSection>

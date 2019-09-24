@@ -8,5 +8,9 @@
     mc:Ignorable="d"
     x:Class="XDSPrismForms.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrismBlue">#46A4EC</Color>
+            <Color x:Key="PrismGray">#7E7D81</Color>
+        </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

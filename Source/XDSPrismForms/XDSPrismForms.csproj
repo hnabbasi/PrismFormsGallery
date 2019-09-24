@@ -22,6 +22,7 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Converters\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove=".DS_Store" />

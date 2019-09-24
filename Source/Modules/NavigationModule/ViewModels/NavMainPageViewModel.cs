@@ -49,7 +49,7 @@ namespace NavigationModule.ViewModels
                     break;
                 case "DeeperParams":
                     // Any parameter passed to a TabbedPage will be propagated to all children pages (tabs).
-                    await _navigationService.NavigateAsync("ViewA?name=HussainA/ViewB?name=HussainB/ViewC?selectedTab=TabC&name=Hussain&message=folks");
+                    await _navigationService.NavigateAsync("ViewA?name=HussainA/ViewB?name=HussainB/ViewC?selectedTab=TabB&name=Hussain&message=folks");
                     break;
                 case "Remove":
                     await _navigationService.NavigateAsync("../ViewA/ViewB/ViewC");

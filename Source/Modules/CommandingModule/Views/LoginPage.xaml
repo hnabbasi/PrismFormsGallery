@@ -7,7 +7,6 @@
     <StackLayout VerticalOptions="Center"
                  HorizontalOptions="Center"
                  Spacing="12">
-        <Entry Text="{Binding Name}" Placeholder="Enter name..."/>
         <StackLayout Orientation="Horizontal">
             <Label Text="Can Submit" 
                    HorizontalOptions="FillAndExpand" 
