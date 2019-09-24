@@ -1,6 +1,10 @@
 # Prism.Forms Features Gallery
 This is a gallery of features offered by Prism and Prism.Forms for Xamarin.Forms apps development. Feel free to use this for your presentations, learning, etc.
 
+| x | x | x | x|
+--|--|--|--
+![Gallery](Media/ios_main.png)
+
 ## Slides
 [XDS Prism Forms](https://github.com/hnabbasi/PrismFormsGallery/blob/master/XDS%20Prism%20Forms.pptx)
 
