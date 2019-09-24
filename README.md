@@ -1,9 +1,9 @@
 # Prism.Forms Features Gallery
 This is a gallery of features offered by Prism and Prism.Forms for Xamarin.Forms apps development. Feel free to use this for your presentations, learning, etc.
 
-| x | x | x | x|
+| Main Menu | Modules | Navigation with Tabs | Dialog Service |
 --|--|--|--
-![Gallery](Media/ios_main.png)
+![Gallery](Media/ios_main.png) | ![Gallery](Media/ios_modules.png) | ![Gallery](Media/droid_nav_tabs.png) | ![Gallery](Media/droid_dialog.png)
 
 ## Slides
 [XDS Prism Forms](https://github.com/hnabbasi/PrismFormsGallery/blob/master/XDS%20Prism%20Forms.pptx)
