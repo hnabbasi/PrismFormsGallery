@@ -1,3 +1,8 @@
+# NOTE: We've Moved ... sorta :smile:
+This repo has been merged to the official [Prism.Forms Samples](https://github.com/PrismLibrary/Prism-Samples-Forms) repo. To get the latest version of this, make sure to check it out
+
+[PrismLibrary/Prism-Samples-Forms/PrismFormsGallery](https://github.com/PrismLibrary/Prism-Samples-Forms/tree/master/PrismFormsGallery)
+
 # Prism.Forms Features Gallery
 This is a gallery of features offered by Prism and Prism.Forms for Xamarin.Forms apps development. Feel free to use this for your presentations, learning, etc.
 
